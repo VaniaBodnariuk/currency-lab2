@@ -23,7 +23,7 @@ for(let i = 0; i < incomes.length; i++){
 }
 
 let rawData = [];
-let CurrencyToUAH = [];
+
 let earned = 0;
 let earnedUAH = 0;
 
@@ -35,7 +35,6 @@ for(let i = 0; i < incomes.length; i++){
         "rate": Currency[i].rate
     })
 
-    CurrencyToUAH = Currency[i].rate * incomes[i].summ;
     earned += incomes[i].summ;
     earnedUAH += (Currency[i].rate * incomes[i].summ);
 }
